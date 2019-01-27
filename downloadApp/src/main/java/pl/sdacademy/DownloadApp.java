@@ -26,7 +26,7 @@ public class DownloadApp extends HttpServlet {
                 "</head>\n" +
                 "<body>\n" +
                 "<p>File name to download:</p>\n" +
-                "<form method=\"post\" action=\"/download\">\n" +
+                "<form method=\"post\" action=\"download\">\n" +
                 "    <label>\n" +
                 "        <input name=\"what\" type=\"text\">\n" +
                 "    </label>\n" +
@@ -44,7 +44,7 @@ public class DownloadApp extends HttpServlet {
             response.getWriter().println("<html>" +
                     "<body>" +
                     "<p>Nothing given thus no results</p>" +
-                    "<a href=\"/download\">Back</a>" +
+                    "<a href=\"download\">Back</a>" +
                     "</body>" +
                     "</html>");
             return;
